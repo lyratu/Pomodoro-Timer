@@ -1,0 +1,89 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  --ring-weight: 175px;
+}
+
+.container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.progress-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(#007bff 0%, #007bff 0%, #e9ecef 0%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+#timer-text {
+  font-size: 32px;
+  color: #333;
+  height: var(--ring-weight);
+  width: var(--ring-weight);
+  text-align: center;
+  line-height: var(--ring-weight);
+  position: absolute;
+  z-index: 1; /* Ensure the text is above the progress circle */
+  background-color: #ffffff; /* Add a background color to make the text more visible */
+  border-radius: 50%;
+}
+
+.controls label {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #333;
+}
+
+.controls input {
+  padding: 5px;
+  font-size: 16px;
+  width: 60px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.preset-buttons .btn {
+  margin: 5px;
+}
+
+.history h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.history li {
+  background: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.history .btn {
+  margin-top: 10px;
+}
